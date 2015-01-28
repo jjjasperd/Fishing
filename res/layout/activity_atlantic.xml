@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Arctic" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:android1="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/imageview0"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignLeft="@+id/progress1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/a" />
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/progress1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY" />
+        <ImageView
+        android:id="@+id/imageview1"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/progress1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY" />
+
+    <ProgressBar
+        android:id="@+id/progress1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progress"
+        android:layout_marginTop="23dp"
+        android:max="10"
+        android:secondaryProgress="10"
+        android:visibility="invisible" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageview0"
+        android:layout_alignTop="@+id/imageview0"
+        android:max="90"
+        android:progress="90" />
+
+    <ProgressBar
+        android1:id="@+id/progress2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android1:layout_width="100dp"
+        android1:layout_height="wrap_content"
+        android1:layout_alignBottom="@+id/imageview0"
+        android1:layout_alignRight="@+id/imageview0"
+        android1:layout_marginBottom="18dp"
+        android1:layout_marginRight="31dp"
+        android1:visibility="invisible" />
+
+</RelativeLayout>
